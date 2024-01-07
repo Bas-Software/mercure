@@ -29,6 +29,10 @@
 		# Subscriber JWT key
 		subscriber_jwt {env.MERCURE_SUBSCRIBER_JWT_KEY} {env.MERCURE_SUBSCRIBER_JWT_ALG}
 		# Extra directives
+		cors_origins *
+		publish_origins *
+		demo
+        debug
 		{$MERCURE_EXTRA_DIRECTIVES}
 	}
 
